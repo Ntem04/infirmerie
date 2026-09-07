@@ -1,0 +1,1 @@
+//Validation des saisies médicales

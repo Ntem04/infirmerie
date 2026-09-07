@@ -1,0 +1,854 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "fullName": "Administrateur BEAC"
+    },
+    {
+      "id": 2,
+      "username": "infirmier",
+      "password": "infirmier123",
+      "role": "nurse",
+      "fullName": "Infirmier BEAC"
+    },
+    {
+      "id": 3,
+      "username": "medecin",
+      "password": "medecin123",
+      "role": "MEDECIN",
+      "fullName": "Médecin BEAC"
+    }
+  ],
+  "patients": [
+    {
+      "id": "4XnPpYYsrvM",
+      "nomComplet": "dilane",
+      "sexe": "-",
+      "age": "-",
+      "service": "Service Systèmes d'Information",
+      "createdAt": "2026-08-26T13:43:16.950Z"
+    },
+    {
+      "id": "SEtQvUqDkpk",
+      "nomComplet": "evrad",
+      "sexe": "-",
+      "age": "-",
+      "service": "Service Ressources Humaines, Formation, Affaires Juridiques et Organisation",
+      "createdAt": "2026-08-27T07:56:51.965Z"
+    },
+    {
+      "nomComplet": "ntem",
+      "sexe": "M",
+      "age": "25",
+      "service": "Service Ressources Humaines, Formation, Affaires Juridiques et Organisation",
+      "createdAt": "2026-08-27T08:06:40.514Z",
+      "id": "d0ktY6DweEs"
+    },
+    {
+      "nomComplet": "n",
+      "sexe": "-",
+      "age": "10",
+      "service": "Service Études et Statistiques, Activités Bancaires et Financement des Économies",
+      "createdAt": "2026-08-27T13:14:06.782Z",
+      "id": "w-a6Bd9grEE"
+    }
+  ],
+  "logs": [
+    {
+      "id": "pHhldyRfT3w",
+      "timestamp": "2026-08-26T13:37:48.815Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "0lqgLQvPQSg",
+      "timestamp": "2026-08-26T13:38:42.422Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "L-1787751796957",
+      "timestamp": "2026-08-26T13:43:16.957Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "MEDECIN",
+      "action": "CREATION_PATIENTS",
+      "details": "Une entrée a été ajoutée dans le module 'patients'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787751796966",
+      "timestamp": "2026-08-26T13:43:16.966Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "MEDECIN",
+      "action": "CREATION_ACTES_MEDICAUX",
+      "details": "Une entrée a été ajoutée dans le module 'actes_medicaux'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787817411979",
+      "timestamp": "2026-08-27T07:56:51.979Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "MEDECIN",
+      "action": "CREATION_PATIENTS",
+      "details": "Une entrée a été ajoutée dans le module 'patients'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787817411990",
+      "timestamp": "2026-08-27T07:56:51.990Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "MEDECIN",
+      "action": "CREATION_ACTES_MEDICAUX",
+      "details": "Une entrée a été ajoutée dans le module 'actes_medicaux'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "BpqrjREb_gQ",
+      "timestamp": "2026-08-27T08:05:01.691Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "L-1787818000521",
+      "timestamp": "2026-08-27T08:06:40.521Z",
+      "userId": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CREATION_PATIENTS",
+      "details": "Une entrée a été ajoutée dans le module 'patients'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787818000531",
+      "timestamp": "2026-08-27T08:06:40.531Z",
+      "userId": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CREATION_ACTES_INFIRMIERS",
+      "details": "Une entrée a été ajoutée dans le module 'actes_infirmiers'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787818000542",
+      "timestamp": "2026-08-27T08:06:40.542Z",
+      "userId": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CREATION_QUEUE",
+      "details": "Création d'un nouveau dossier médical patient en file d'attente.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "PkqPLCuPLH0",
+      "timestamp": "2026-08-27T08:07:03.526Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "952YtlHhh28",
+      "timestamp": "2026-08-27T08:07:26.736Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "VkAh9HxHV1g",
+      "timestamp": "2026-08-27T08:07:26.737Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "L-1787824066447",
+      "timestamp": "2026-08-27T09:47:46.447Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "NON SPÉCIFIÉ",
+      "action": "SUPPRESSION_QUEUE",
+      "details": "Une entrée a été supprimée dans le module 'queue'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "0ocOHfmEbtA",
+      "timestamp": "2026-08-27T10:33:50.185Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "G_5WCGebi_A",
+      "timestamp": "2026-08-27T10:33:50.188Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "3vnc7DhCgEc",
+      "timestamp": "2026-08-27T10:42:34.340Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "iOUD34xOSPw",
+      "timestamp": "2026-08-27T10:42:34.341Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "9LGCxXXUueM",
+      "timestamp": "2026-08-27T10:51:44.253Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "MBghoiDAE5A",
+      "timestamp": "2026-08-27T10:51:44.254Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "6x7Gk7xo18I",
+      "timestamp": "2026-08-27T10:55:30.616Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "SkISfhpy-Hs",
+      "timestamp": "2026-08-27T10:55:30.618Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "FE7NcSLYw1I",
+      "timestamp": "2026-08-27T11:16:15.087Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "D2MVDf8DN4I",
+      "timestamp": "2026-08-27T11:16:15.088Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "L-1787829386387",
+      "timestamp": "2026-08-27T11:16:26.387Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "MEDECIN",
+      "action": "CREATION_ACTES_MEDICAUX",
+      "details": "Une entrée a été ajoutée dans le module 'actes_medicaux'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787829386404",
+      "timestamp": "2026-08-27T11:16:26.404Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "MEDECIN",
+      "action": "MODIFICATION_ACTES_INFIRMIERS",
+      "details": "Une entrée a été modifiée dans le module 'actes_infirmiers'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "B_ttpgvi6K0",
+      "timestamp": "2026-08-27T11:16:33.406Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "suVITGEQDqI",
+      "timestamp": "2026-08-27T11:16:33.406Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "vO4gHkwLJ7c",
+      "timestamp": "2026-08-27T11:25:55.398Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "s8xR74IF5AE",
+      "timestamp": "2026-08-27T11:25:55.399Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "kb0LbPbFw9c",
+      "timestamp": "2026-08-27T11:26:03.159Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "e3ErA1lhtrI",
+      "timestamp": "2026-08-27T11:26:03.159Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "zt43kgreg1Y",
+      "timestamp": "2026-08-27T11:26:11.271Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "M_X29r_Bqyo",
+      "timestamp": "2026-08-27T11:26:11.271Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : evrad (ID: SEtQvUqDkpk)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "kO5gs7Wm9Xg",
+      "timestamp": "2026-08-27T11:28:54.205Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "1x-ZUbAuXiM",
+      "timestamp": "2026-08-27T11:32:45.971Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "MGdNzi_DkqM",
+      "timestamp": "2026-08-27T11:49:31.274Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "plwm0fmyPXM",
+      "timestamp": "2026-08-27T13:09:53.195Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "L-1787836446789",
+      "timestamp": "2026-08-27T13:14:06.789Z",
+      "userId": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CREATION_PATIENTS",
+      "details": "Une entrée a été ajoutée dans le module 'patients'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787836446800",
+      "timestamp": "2026-08-27T13:14:06.800Z",
+      "userId": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "MODIFICATION_PHARMACIE",
+      "details": "Mise à jour de la quantité ou péremption pour le médicament 26GwYVNt14I.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "L-1787836446808",
+      "timestamp": "2026-08-27T13:14:06.808Z",
+      "userId": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CREATION_ACTES_INFIRMIERS",
+      "details": "Une entrée a été ajoutée dans le module 'actes_infirmiers'.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    },
+    {
+      "id": "IeBglzwCOZY",
+      "timestamp": "2026-08-27T13:27:04.732Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "ll18Dt-CH1g",
+      "timestamp": "2026-08-27T13:42:31.824Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : n (ID: w-a6Bd9grEE)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "Wciz4iuumZI",
+      "timestamp": "2026-08-27T13:42:31.827Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : n (ID: w-a6Bd9grEE)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "vnSl0t8hatQ",
+      "timestamp": "2026-08-27T13:42:50.512Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : n (ID: w-a6Bd9grEE)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "9gPQ0-8gbgI",
+      "timestamp": "2026-08-27T13:42:50.514Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : n (ID: w-a6Bd9grEE)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "rN_inFYthNk",
+      "timestamp": "2026-08-27T13:54:03.678Z",
+      "userId": "Administrateur BEAC",
+      "userName": "Administrateur BEAC",
+      "role": "ADMIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "K58Ne8X8w9I",
+      "timestamp": "2026-08-27T13:58:52.227Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "YGfFnvuEz9k",
+      "timestamp": "2026-08-27T13:59:04.429Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "lvabla27wdA",
+      "timestamp": "2026-08-27T13:59:04.432Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "U6YWpD9eJaY",
+      "timestamp": "2026-08-27T14:03:29.467Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "P9607eq2nKc",
+      "timestamp": "2026-08-27T14:03:29.477Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "LECTURE_DOSSIER",
+      "details": "Consultation du dossier médical complet : ntem (ID: d0ktY6DweEs)",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "DYiv1QaLmjg",
+      "timestamp": "2026-08-27T21:14:24.090Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "8oRzk6OTfFM",
+      "timestamp": "2026-08-27T21:38:41.443Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "tBnLW1EZ_Qs",
+      "timestamp": "2026-08-27T21:39:23.758Z",
+      "userId": "Administrateur BEAC",
+      "userName": "Administrateur BEAC",
+      "role": "ADMIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "0bGH_zNjadQ",
+      "timestamp": "2026-08-27T21:39:33.048Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "lLq7QS1JK80",
+      "timestamp": "2026-08-27T21:39:52.761Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "bphIK7sfVcs",
+      "timestamp": "2026-08-30T16:20:41.367Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "YaI53EKt7wg",
+      "timestamp": "2026-08-30T16:22:15.200Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "NNXNHzlnY5M",
+      "timestamp": "2026-08-30T16:30:10.420Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "yCbOjm5FAJo",
+      "timestamp": "2026-09-03T18:24:38.639Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "4WN0KXoJMaI",
+      "timestamp": "2026-09-03T18:53:45.981Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "AcG3j0fmJ2w",
+      "timestamp": "2026-09-03T18:57:32.647Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "ZfLWn-fg1C0",
+      "timestamp": "2026-09-03T18:57:51.207Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "O5fNR0xO4so",
+      "timestamp": "2026-09-03T18:59:20.432Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "OuD-mndyTdg",
+      "timestamp": "2026-09-03T19:01:01.301Z",
+      "userId": "Médecin BEAC",
+      "userName": "Médecin BEAC",
+      "role": "MEDECIN",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "lc8gtFdrhjM",
+      "timestamp": "2026-09-03T20:57:54.135Z",
+      "userId": "Infirmier BEAC",
+      "userName": "Infirmier BEAC",
+      "role": "INFIRMIERE",
+      "action": "CONNEXION",
+      "details": "Ouverture de session réussie",
+      "ipAdresse": "Client Web (React)"
+    },
+    {
+      "id": "L-1788469135255",
+      "timestamp": "2026-09-03T20:58:55.255Z",
+      "userId": "Utilisateur Inconnu",
+      "role": "NON SPÉCIFIÉ",
+      "action": "CREATION_PHARMACIE",
+      "details": "Ajout d'un nouveau médicament dans l'état des stocks.",
+      "ipAdresse": "Machine Locale (127.0.0.1)"
+    }
+  ],
+  "actes_infirmiers": [
+    {
+      "id": "fS4voJBp378",
+      "patientId": "d0ktY6DweEs",
+      "temperature": "35",
+      "tension": "145",
+      "poids": "80",
+      "pouls": "-11+",
+      "pathology": "Maux de tête",
+      "medicine": "-",
+      "quantity": "-",
+      "createdAt": "2026-08-27T08:06:40.523Z",
+      "status": "Terminé"
+    },
+    {
+      "id": "3Op2ErlpSfA",
+      "patientId": "w-a6Bd9grEE",
+      "temperature": "30",
+      "tension": "85",
+      "poids": "75",
+      "pouls": "80",
+      "pathology": "25022",
+      "medicine": "Amoxicilline 1g - Gélule",
+      "quantity": "2",
+      "createdAt": "2026-08-27T13:14:06.802Z",
+      "status": "Terminé"
+    }
+  ],
+  "actes_medicaux": [
+    {
+      "id": "PFki3-iHdpE",
+      "patientId": "4XnPpYYsrvM",
+      "date": "mercredi 26 août 2026",
+      "timestamp": 1787751796960,
+      "plaintes": "paludisme",
+      "examen": "Examen clinique réalisé",
+      "diagnostic": "paludisme",
+      "ordonnance": "- Artéméther/Luméfantrine (ACT) :",
+      "arret": "0",
+      "constantesSnapshot": {
+        "id": "4XnPpYYsrvM",
+        "temperature": "-",
+        "tension": "-",
+        "poids": "-",
+        "pouls": "-"
+      }
+    },
+    {
+      "id": "BD4hErqxZ9c",
+      "patientId": "SEtQvUqDkpk",
+      "date": "jeudi 27 août 2026",
+      "timestamp": 1787817411982,
+      "plaintes": "palu",
+      "examen": "Examen clinique réalisé",
+      "diagnostic": "palu",
+      "ordonnance": "- Artéméther/Luméfantrine (ACT) :",
+      "arret": "0",
+      "constantesSnapshot": {
+        "id": "SEtQvUqDkpk",
+        "temperature": "-",
+        "tension": "-",
+        "poids": "-",
+        "pouls": "-"
+      }
+    },
+    {
+      "id": "hC4ZKm4UgMs",
+      "patientId": "d0ktY6DweEs",
+      "date": "jeudi 27 août 2026",
+      "timestamp": 1787829386378,
+      "plaintes": "Maux de tête",
+      "examen": "Examen clinique réalisé",
+      "diagnostic": "Maux de tête",
+      "ordonnance": "",
+      "arret": "0",
+      "constantesSnapshot": {
+        "id": "d0ktY6DweEs",
+        "temperature": "35",
+        "tension": "145",
+        "poids": "80",
+        "pouls": "-11+"
+      }
+    }
+  ],
+  "consultations": [],
+  "prescriptions": [],
+  "inventory": [],
+  "activity": [],
+  "documents": [],
+  "kpi": {
+    "patientsDuJour": 0,
+    "totalPatientsConsulte": 0,
+    "alertesPharmacie": 2
+  },
+  "queue": [],
+  "epidemiologie": [],
+  "pharmacie": [
+    {
+      "id": "zXut4TEHF8k",
+      "nomMedicament": "Paracétamol 1000mg - Comprimé",
+      "dateArrivee": "2026-08-22",
+      "datePeremption": "2026-09-08",
+      "quantite": 60,
+      "quantity": 65
+    },
+    {
+      "id": "b6DrtIP26Io",
+      "nomMedicament": "Spasfon - Comprimé",
+      "dateArrivee": "2026-08-22",
+      "datePeremption": "2026-11-12",
+      "quantite": 20
+    },
+    {
+      "id": "26GwYVNt14I",
+      "nomMedicament": "Amoxicilline 1g - Gélule",
+      "dateArrivee": "2026-08-24",
+      "datePeremption": "2026-12-30",
+      "quantite": 98
+    },
+    {
+      "id": "Ls4AAIKgrkU",
+      "nomMedicament": "Quinine Injectable",
+      "dateArrivee": "2026-09-03",
+      "datePeremption": "2027-01-12",
+      "quantite": 150
+    }
+  ]
+}

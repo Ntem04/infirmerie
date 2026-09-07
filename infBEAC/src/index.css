@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-beac-primary: #005ca5;
+  --color-beac-secondary: #c2a712;
+}
+
+:root {
+  --beac-primary: #005ca5;
+  --beac-primary-dark: #003e77;
+  --beac-accent: #c2a712;
+  --beac-accent-dark: #9d8c0a;
+  --beac-accent-soft: #fff7cf;
+  --beac-surface: #f5f7fb;
+  --beac-border: rgba(0, 92, 165, 0.16);
+}
+
+@layer base {
+  html {
+    font-family:
+      "Roboto",
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Liberation Sans",
+      sans-serif;
+  }
+
+  body,
+  #root,
+  input,
+  textarea,
+  button,
+  select,
+  label,
+  a,
+  div,
+  span,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family:
+      "Roboto",
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Liberation Sans",
+      sans-serif;
+    font-weight: 500;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  .card,
+  .rounded-2xl,
+  .rounded-xl {
+    transition: background-color 180ms ease, color 150ms ease, box-shadow 180ms ease, transform 120ms ease;
+    will-change: transform, background-color, color, box-shadow;
+  }
+
+  button,
+  [type="button"],
+  [type="submit"],
+  [role="button"] {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  button[class*="bg-green-"],
+  [type="button"][class*="bg-green-"],
+  [type="submit"][class*="bg-green-"] {
+    background-color: var(--beac-accent) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    box-shadow: 0 10px 25px rgba(194, 167, 18, 0.22);
+  }
+
+  button[class*="hover:bg-green-"]:hover,
+  [type="button"][class*="hover:bg-green-"]:hover,
+  [type="submit"][class*="hover:bg-green-"]:hover {
+    background-color: var(--beac-primary) !important;
+    color: #ffffff !important;
+  }
+
+  button[class*="focus:ring-green-"],
+  [type="button"][class*="focus:ring-green-"],
+  [type="submit"][class*="focus:ring-green-"] {
+    --tw-ring-color: rgba(194, 167, 18, 0.35) !important;
+  }
+
+  body :not(.dashboard-shell)[class*="bg-green-"],
+  body :not(.dashboard-shell)[class*="bg-emerald-"],
+  body :not(.dashboard-shell)[class*="bg-teal-"],
+  body :not(.dashboard-shell)[class*="bg-lime-"] {
+    background-color: var(--beac-accent) !important;
+  }
+
+  body :not(.dashboard-shell)[class*="text-green-"],
+  body :not(.dashboard-shell)[class*="text-emerald-"],
+  body :not(.dashboard-shell)[class*="text-teal-"],
+  body :not(.dashboard-shell)[class*="text-lime-"] {
+    color: var(--beac-accent) !important;
+  }
+
+  body :not(.dashboard-shell)[class*="border-green-"],
+  body :not(.dashboard-shell)[class*="border-emerald-"],
+  body :not(.dashboard-shell)[class*="border-teal-"],
+  body :not(.dashboard-shell)[class*="border-lime-"] {
+    border-color: var(--beac-accent) !important;
+  }
+
+  body :not(.dashboard-shell)[class*="ring-green-"],
+  body :not(.dashboard-shell)[class*="ring-emerald-"],
+  body :not(.dashboard-shell)[class*="ring-teal-"],
+  body :not(.dashboard-shell)[class*="ring-lime-"] {
+    --tw-ring-color: rgba(194, 167, 18, 0.35) !important;
+    box-shadow: 0 0 0 4px rgba(194, 167, 18, 0.18) !important;
+  }
+
+  body :not(.dashboard-shell) [class*="hover:bg-green-"],
+  body :not(.dashboard-shell) [class*="hover:bg-emerald-"],
+  body :not(.dashboard-shell) [class*="hover:bg-teal-"],
+  body :not(.dashboard-shell) [class*="hover:bg-lime-"] {
+    background-color: var(--beac-primary) !important;
+  }
+
+  body :not(.dashboard-shell) [class*="hover:text-green-"],
+  body :not(.dashboard-shell) [class*="hover:text-emerald-"],
+  body :not(.dashboard-shell) [class*="hover:text-teal-"],
+  body :not(.dashboard-shell) [class*="hover:text-lime-"] {
+    color: var(--beac-accent) !important;
+  }
+}
+
+@layer utilities {
+  .font-sans {
+    font-family:
+      "Roboto",
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Liberation Sans",
+      sans-serif;
+  }
+}
+
+/* Scrollbar: thin, overlay-style so it doesn't shift layout and stays visually subtle */
+:root {
+  --scrollbar-thumb: rgba(46,139,87,0.28); /* based on --color-beac-primary (#2e8b57) */
+  --scrollbar-thumb-hover: rgba(46,139,87,0.42);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* keep track invisible so it doesn't influence visuals */
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+@custom-variant dark (&:is(.dark *));
